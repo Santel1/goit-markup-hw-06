@@ -73,11 +73,70 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="btn-modal" data-modal-close>
+          <button class="btn-modal" type="button" data-modal-close>
             <svg class="close-btn" width="8" height="8">
               <use href="./images/icon.svg#icon-close-btn"></use>
             </svg>
           </button>
+          <!-- Order form -->
+
+          <form class="form-order">
+            <strong class="order-title">
+              Leave your contacts and we will call you back
+            </strong>
+            <label class="order-label" for="user-name">Name</label>
+            <div class="order-field">
+              <input
+                class="order-input"
+                type="text"
+                id="user-name"
+                autocomplete="off"
+              />
+              <svg class="order-icon" width="18" height="24">
+                <use href="./images/icon.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="order-label" for="user-phone">Phone</label>
+            <div class="order-field">
+              <input
+                class="order-input"
+                type="tel"
+                id="user-phone"
+                autocomplete="off"
+              />
+              <svg class="order-icon" width="18" height="24">
+                <use href="./images/icon.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="order-label" for="user-email">Email</label>
+            <div class="order-field">
+              <input
+                class="order-input"
+                type="email"
+                id="user-email"
+                autocomplete="off"
+              />
+              <svg class="order-icon" width="18" height="24">
+                <use href="./images/icon.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="order-label" for="comment">Comment</label>
+            <textarea
+              class="order-textarea"
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+            <label class="order-label-privacy" for="privacy">
+              <input class="order-input-privacy" type="checkbox" id="privacy" />
+              <span class="order-text-privacy"
+                >I accept the terms and conditions of the
+                <a href="" class="order-text-privacy">Privacy Policy</a></span
+              >
+            </label>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
         </div>
       </div>
 
@@ -449,6 +508,19 @@
             </li>
           </ul>
         </div>
+        <form class="form-subscribe">
+          <p class="subscribe-text">Subscribe</p>
+          <label for=""></label>
+          <div class="subscribe-wrapper">
+            <input class="subscribe-input" type="email" placeholder="E-mail" />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="20">
+                <use href="./images/icon.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
