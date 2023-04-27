@@ -128,12 +128,14 @@
               rows="5"
               placeholder="Text input"
             ></textarea>
-            <label class="order-label-privacy" for="privacy">
-              <input class="order-input-privacy" type="checkbox" id="privacy" />
-              <span class="order-text-privacy"
-                >I accept the terms and conditions of the
-                <a href="" class="order-text-privacy">Privacy Policy</a></span
-              >
+
+            <label class="order-label-privacy">
+              <input class="order-checkbox-privacy" type="checkbox" />
+              <span class="order-checkbox-icon"></span>
+              <span class="order-text-privacy">
+                I accept the terms and conditions of the
+                <a href="" class="order-link-privacy">Privacy Policy</a>
+              </span>
             </label>
             <button type="submit" class="submit-btn">Send</button>
           </form>
@@ -510,9 +512,14 @@
         </div>
         <form class="form-subscribe">
           <p class="subscribe-text">Subscribe</p>
-          <label for=""></label>
+          <label for="subscribe"></label>
           <div class="subscribe-wrapper">
-            <input class="subscribe-input" type="email" placeholder="E-mail" />
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+            />
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="20">
