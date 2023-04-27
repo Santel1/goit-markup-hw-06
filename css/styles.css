@@ -443,7 +443,6 @@ ul {
 }
 
 .order-checkbox-privacy:checked + .order-checkbox-icon {
-  background-image: url(/images/checkbox-active.svg);
   background-color: var(--btn-active-color);
   background-size: contain;
   border-color: var(--btn-active-color);
