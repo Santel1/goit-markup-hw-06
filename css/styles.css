@@ -384,9 +384,6 @@ ul {
   fill: var(--btn-active-color);
 }
 
-.privacy-checkbox {
-}
-
 .order-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -412,13 +409,26 @@ ul {
 }
 
 .order-label-privacy {
+  position: relative;
   margin-bottom: 24px;
-  display: flex;
+  display: block;
 }
 .order-checkbox-privacy {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: absolute;
+
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
 }
 
 .order-text-privacy {
@@ -429,13 +439,15 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--border-customers);
-  margin-left: 8px;
+  margin-left: 24px;
 }
 
 .order-checkbox-privacy:checked + .order-checkbox-icon {
   background-image: url(/images/checkbox-active.svg);
   background-color: var(--btn-active-color);
   background-size: contain;
+  border-color: var(--btn-active-color);
+  fill: var(--white-background-color);
 }
 
 .order-link-privacy {
@@ -449,11 +461,15 @@ ul {
 }
 
 .order-checkbox-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
