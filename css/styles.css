@@ -129,7 +129,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page {
@@ -183,7 +183,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -259,7 +259,7 @@ ul {
   min-height: 56px;
   cursor: pointer;
   margin: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-btn:hover,
@@ -278,7 +278,7 @@ ul {
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
   opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -293,27 +293,26 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
   background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 24px 24px;
 }
 
 .btn-modal {
   position: absolute;
   top: 24px;
   right: 24px;
-  list-style: none;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--accent);
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,8 +327,6 @@ ul {
 /* Order form */
 
 .order-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -363,7 +360,7 @@ ul {
   border-radius: 4px;
   width: 100%;
   padding: 11px 0px 11px 38px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-input:focus {
@@ -377,7 +374,7 @@ ul {
   left: 16px;
   transform: translateY(-50%);
   fill: var(--dark-background-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-field:focus-within .order-icon {
@@ -391,7 +388,7 @@ ul {
   resize: none;
   margin-bottom: 16px;
   padding: 8px 16px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-textarea:focus {
@@ -418,7 +415,9 @@ ul {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* position: absolute;
   width: 1px;
@@ -470,7 +469,7 @@ ul {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-checkbox-privacy:focus + .order-checkbox-icon {
@@ -487,8 +486,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -496,7 +493,7 @@ ul {
   padding: 16px 32px;
   display: block;
   margin: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover,
@@ -654,7 +651,7 @@ ul {
   padding: 0px 0px;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -696,7 +693,8 @@ ul {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   fill: currentColor;
@@ -720,7 +718,7 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  /* gap: 120px; */
 }
 .logo-footer {
   display: inline-block;
@@ -743,6 +741,7 @@ ul {
   line-height: 1.5;
 }
 .footer-logo-container {
+  margin-right: 120px;
 }
 
 .footer-link-container {
@@ -777,7 +776,7 @@ ul {
   padding: 0px 0px;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
@@ -791,8 +790,7 @@ ul {
 /* Subscribe field  */
 
 .form-subscribe {
-  display: flex;
-  flex-direction: column;
+  margin-left: auto;
 }
 
 .subscribe-text {
@@ -846,7 +844,7 @@ ul {
   cursor: pointer;
   padding: 8px 24px;
   gap: 16px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn:hover,
